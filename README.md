@@ -65,8 +65,12 @@ The internal network and domain have not yet been configured.
 
 ### Pending
 
-- [ ] WinRM diagnostics
-- [ ] Secure remote management configuration
+- [x] WinRM service, listener and authentication diagnostics (2026-11-23)
+- [x] Local-only NAT forwarding for WinRM remote management
+- [x] Host-to-guest authenticated Negotiate and PowerShell execution
+- [x] VirtualBox Guest Additions service running
+- [ ] Guest Additions version verification
+- [ ] Verify password rotation and safe communicator credential handling
 - [ ] Vagrant base box creation
 - [ ] First successful Vagrant deployment
 - [ ] DC01 deployment
@@ -89,7 +93,14 @@ The internal network and domain have not yet been configured.
 
 ## Documentation
 
-Technical documentation, implementation procedures, troubleshooting notes and test results will be added throughout the project.
+- [WinRM setup and validation](docs/winrm-setup.md): real results from the November 23, 2026 lab
+- [Architecture](docs/architecture.md): confirmed management path and separately marked future AD topology
+- [WinRM demo script](scripts/demo-winrm.ps1): credential-prompted, sanitized remote verification
+- [Git ignore rules](.gitignore): excludes local VM artifacts and common secret files
+
+**Validated milestone (2026-11-23):** Windows 11 host successfully authenticated to the Windows Server 2025 evaluation guest through a loopback-only VirtualBox NAT forwarding rule and executed remote PowerShell commands via WinRM/Negotiate. This is a host-to-guest infrastructure milestone, not proof of a deployed Active Directory domain or Vagrant-managed VM.
+
+An optional redacted screenshot may be added under `evidence/` after review; none is included yet.
 
 ## Author
 
