@@ -1,0 +1,35 @@
+# Vagrant runtime and local VM assets
+.vagrant/
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.qcow2
+*.ova
+*.ovf
+*.box
+*.iso
+*.vbox
+*.vbox-prev
+
+# Local credentials and key material
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+*.kdbx
+*.secret
+*.secrets
+credentials.*
+secrets.*
+
+# Local configuration and OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# NOTE: .gitignore does not protect already tracked files.
+# Inspect git status and each change before pushing.
