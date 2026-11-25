@@ -1,7 +1,7 @@
 
 # Enterprise Active Directory & IAM Lab
 
-**Status:** Infrastructure setup in progress
+**Status:** Base VM preparation assessed; Vagrant deployment pending (2026-11-24)
 
 ## Overview
 
@@ -63,14 +63,21 @@ The internal network and domain have not yet been configured.
 - [x] Initial VM hardware and network verification
 - [x] Initial Vagrantfile syntax validation
 
-### Pending
-
 - [x] WinRM service, listener and authentication diagnostics (2026-11-23)
 - [x] Local-only NAT forwarding for WinRM remote management
 - [x] Host-to-guest authenticated Negotiate and PowerShell execution
 - [x] VirtualBox Guest Additions service running
-- [ ] Guest Additions version verification
-- [ ] Verify password rotation and safe communicator credential handling
+- [x] Guest Additions version verified against host (2026-11-24)
+- [x] Administrator password rotation reported and current credential tested via WinRM
+- [x] WinRM communicator configuration validated with a temporary environment variable
+- [x] NAT forwarding persistence and authenticated execution verified after a full shutdown/start cycle
+- [x] Standalone server, installed roles, local accounts and administrator membership inventoried
+- [x] Host and guest storage capacity assessed
+
+### Pending
+
+- [ ] Evaluate Windows image generalization and per-machine credential rotation before packaging
+- [ ] Verify shared folders and Vagrant communicator end-to-end
 - [ ] Vagrant base box creation
 - [ ] First successful Vagrant deployment
 - [ ] DC01 deployment
@@ -99,6 +106,10 @@ The internal network and domain have not yet been configured.
 - [Git ignore rules](.gitignore): excludes local VM artifacts and common secret files
 
 **Validated milestone (2026-11-23):** Windows 11 host successfully authenticated to the Windows Server 2025 evaluation guest through a loopback-only VirtualBox NAT forwarding rule and executed remote PowerShell commands via WinRM/Negotiate. This is a host-to-guest infrastructure milestone, not proof of a deployed Active Directory domain or Vagrant-managed VM.
+
+**Validated milestone (2026-11-24):** Guest Additions matched the installed VirtualBox version. A failed executable-path lookup was resolved through service and command discovery. Vagrant configuration validation initially failed because the password environment variable was absent; validation succeeded after temporary credential injection. The NAT forwarding rule persisted across a full shutdown/start cycle, and TCP, WS-Man and authenticated PowerShell execution succeeded again. The guest remains a standalone server without AD DS installed; only the built-in Administrator was listed as a direct member of the local Administrators group. Image generalization, packaging and actual Vagrant-managed authentication remain pending.
+
+The box must remain private: a disk image may contain local credential material. No credentials or raw disk images are included in this documentation.
 
 An optional redacted screenshot may be added under `evidence/` after review; none is included yet.
 
