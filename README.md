@@ -109,6 +109,15 @@ The internal network and domain have not yet been configured.
 
 **Validated milestone (2026-11-24):** Guest Additions matched the installed VirtualBox version. A failed executable-path lookup was resolved through service and command discovery. Vagrant configuration validation initially failed because the password environment variable was absent; validation succeeded after temporary credential injection. The NAT forwarding rule persisted across a full shutdown/start cycle, and TCP, WS-Man and authenticated PowerShell execution succeeded again. The guest remains a standalone server without AD DS installed; only the built-in Administrator was listed as a direct member of the local Administrators group. Image generalization, packaging and actual Vagrant-managed authentication remain pending.
 
+## Learning and Validation Log
+
+**2026-11-25 — Foundational knowledge review (theory only)**
+
+- Reviewed virtualization, Guest Additions, Vagrant, WinRM, NAT, credential handling and layered troubleshooting.
+- Reinforced authentication versus authorization, Kerberos, LDAP, identity lifecycle management, domain membership versus network profile, and well-known Windows security identifiers (SIDs).
+- Completed a 20-question self-assessment with 18 correct answers (90%), followed by a targeted six-question corrective assessment with six correct answers (100%).
+- No infrastructure changes were made during this session. The last validated technical milestone remains 2026-11-24. Image preparation, box packaging and the first Vagrant-managed deployment remain pending.
+
 The box must remain private: a disk image may contain local credential material. No credentials or raw disk images are included in this documentation.
 
 An optional redacted screenshot may be added under `evidence/` after review; none is included yet.
