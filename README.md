@@ -118,6 +118,28 @@ The internal network and domain have not yet been configured.
 - Completed a 20-question self-assessment with 18 correct answers (90%), followed by a targeted six-question corrective assessment with six correct answers (100%).
 - No infrastructure changes were made during this session. The last validated technical milestone remains 2026-11-24. Image preparation, box packaging and the first Vagrant-managed deployment remain pending.
 
+**2026-11-26 — SESSION 06: IAM operations and access risk assessment (theory only)**
+
+Completed a guided, multiple-choice corporate simulation in a fictional financial services environment. No production systems, real identities, lab configurations or security incidents were involved.
+
+| Assessment | Correct answers | Score |
+|---|---:|---:|
+| Retention review | 3/3 | 100% |
+| IAM service desk scenarios | 15/15 | 100% |
+| Access risk assessment | 1/3 | 33.33% |
+| Mock technical interview | 4/5 | 80% |
+| **Total** | **23/26** | **88.46%** |
+
+Five simulated tickets covered application authorization, mover lifecycle and segregation of duties (SoD), recurring account lockouts, privileged access management (PAM/JIT), and offboarding with residual access and service credential dependencies.
+
+Additional study covered access certification, compensating controls, inherent and residual risk, session revocation, non-human identities, and emergency access governance.
+
+**Learning gaps identified:** risk-based prioritization, proportionate remediation of audit findings, and Active Directory permission architecture (OUs versus security groups, RBAC, AGDLP and ACLs).
+
+**Next steps:** targeted retention review followed by practical validation of AD group and permission concepts when the lab is available. Resume base image preparation, secure credential handling, box packaging and Vagrant deployment from the last validated technical checkpoint (2026-11-24).
+
+These results measure recognition of appropriate decisions in a guided theoretical assessment, not independent technical execution, actual ticket resolution or professional certification. No infrastructure changes were made.
+
 The box must remain private: a disk image may contain local credential material. No credentials or raw disk images are included in this documentation.
 
 An optional redacted screenshot may be added under `evidence/` after review; none is included yet.
