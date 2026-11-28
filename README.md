@@ -140,6 +140,27 @@ Additional study covered access certification, compensating controls, inherent a
 
 These results measure recognition of appropriate decisions in a guided theoretical assessment, not independent technical execution, actual ticket resolution or professional certification. No infrastructure changes were made.
 
+**2026-11-27 — Informal retention review and schedule revision**
+
+- Optional review material was provided on IAM fundamentals, JML, OUs versus security groups, AGDLP, risk prioritization, proportionate remediation and laboratory infrastructure.
+- No completed assessment or new score was reported. The cumulative recorded assessment remains 60/68 (88.24%).
+- SESSION 07 remains pending. No infrastructure changes or new practical validations were performed.
+
+### Revised learning roadmap (provisional)
+
+| Milestone | Target |
+|---|---|
+| SESSION 07 / retention review | November 28, if available; otherwise resume November 30, 2026 |
+| M0 — Infrastructure and Vagrant | Through December 5, 2026 |
+| M1 — IAM fundamentals | December 7–19, 2026 |
+| M2 — Active Directory | December 21, 2026 – January 16, 2027 |
+| M3 — PowerShell and automation | January 18 – February 6, 2027 |
+| M4 — Microsoft Entra ID | February 8–27, 2027 |
+| M5 — Governance and auditing | March 1–13, 2027 |
+| M6 — IAM operations and career preparation | March 15–20, 2027 |
+
+November 29 is reserved for rest. Sundays, Christmas Day and New Year's Day remain free. The revised target completion date is March 20, 2027, subject to lab availability and demonstrated mastery. All roadmap dates are planning targets, not completed milestones. The last validated technical checkpoint remains November 24, 2026.
+
 The box must remain private: a disk image may contain local credential material. No credentials or raw disk images are included in this documentation.
 
 An optional redacted screenshot may be added under `evidence/` after review; none is included yet.
